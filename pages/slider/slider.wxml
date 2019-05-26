@@ -1,0 +1,24 @@
+<!-- <view class='currentImgIndex'>{{index}}</view>
+
+<view style='margin-left:{{marginLeft}}px;margin-right:{{marginRight}}px;' class='slider-area'>
+  <view style='top:10px' class='slider-line'></view>
+
+  <view style='width:{{block_width}}px;left:{{offset-block_width/2}}px' catchtouchmove='move' class='slider-block'>
+    <image src='/image/anniu.png'></image>
+  </view>
+</view>
+ -->
+
+<jt-slider  
+lists="{{list}}" 
+marginLeft="20" 
+marginRight="20"
+bindchangeIndex="changeIndex">
+
+<block wx:for="{{list}}">
+<view bindtap='tap' data-item='{{item}}' class='item' >
+  {{item}}
+</view>
+</block>
+
+</jt-slider>

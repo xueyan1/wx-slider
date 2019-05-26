@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "jt-slider":"/component/jt-slider/jt-slider"
+  }
+}

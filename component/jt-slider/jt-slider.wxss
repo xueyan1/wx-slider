@@ -1,0 +1,54 @@
+.slider-area {
+  position: relative
+}
+
+.slider-line {
+ position: relative;
+  height: 2px;
+  background-color: #09a4f6;
+  z-index: 1;
+}
+
+.slider-block {
+  position: absolute;
+  height: 40rpx;
+  min-width: 30rpx;
+  background-color: red;
+   top: 0;
+  border-radius: 50%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.slider-block image {
+  height: 100%;
+  width: 100%;
+}
+.currentindex {
+  position: fixed;
+  top: 42%;
+  left: 36%;
+  background: rgba(0, 0, 0, 0.70);
+  border-radius: 36rpx;
+  width: 200rpx;
+  height: 200rpx;
+  color: white;
+  font-family: PingFangSC-Regular;
+  font-size: 64rpx;
+  letter-spacing: 0;
+  z-index: 1;
+ line-height: 200rpx;
+ text-align: center
+}
+
+.content{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: green;
+  z-index: 4;
+  font-size: 48rpx;
+  color: white
+}
