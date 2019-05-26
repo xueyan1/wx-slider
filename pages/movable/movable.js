@@ -12,12 +12,15 @@ Page({
   tap(e) {
     let index = e.currentTarget.dataset.index
     console.log(index)
-    let item = this.data.items.shift()
-    this.data.tempItems.unshift(item)
-    this.setData({
-      items: this.data.items,
-      tempItems: this.data.tempItems
-    })
+
+    if (this.data.items.length > 1) {
+      let item = this.data.items.shift()
+      this.data.tempItems.unshift(item)
+      this.setData({
+        items: this.data.items,
+        tempItems: this.data.tempItems
+      })
+    }
   },
   // 上一张
   last() {

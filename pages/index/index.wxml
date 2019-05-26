@@ -1,0 +1,11 @@
+<view class='m_20'>
+
+  <navigator class='bg_eee p_10' hover-class='none' url='../slider/slider'>
+    滑动条
+  </navigator>
+
+  <navigator class='mt_20 bg_eee p_10' hover-class='none' url='../movable/movable'>
+    层叠图片
+  </navigator>
+
+</view>

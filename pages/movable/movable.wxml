@@ -1,7 +1,7 @@
 <view class='area'>
   <block wx:for="{{items}}">
     <view bindtap='tap' data-index='{{index}}' style='z-index:{{100-index}}' class='imageView'>
-      <image src='{{item}}'></image>
+      <image  src='{{item}}'></image>
     </view>
   </block>
 </view>
