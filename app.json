@@ -1,11 +1,12 @@
 {
   "pages": [
+    "pages/movable/movable",
     "pages/slider/slider"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "滑动块",
+    "navigationBarTitleText": "效果demo",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json"

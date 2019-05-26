@@ -1,0 +1,11 @@
+
+
+.area{
+  position: relative;
+  height: 600rpx
+}
+.imageView{
+  display: flex;
+  position: absolute;
+  top: 0
+}

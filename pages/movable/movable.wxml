@@ -1,0 +1,9 @@
+<view class='area'>
+  <block wx:for="{{items}}">
+    <view bindtap='tap' data-index='{{index}}' style='z-index:{{100-index}}' class='imageView'>
+      <image src='{{item}}'></image>
+    </view>
+  </block>
+</view>
+<button bindtap='last'>上一张</button>
+<button bindtap='next'>下一张</button>
