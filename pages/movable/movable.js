@@ -12,37 +12,26 @@ Page({
   tap(e) {
     let index = e.currentTarget.dataset.index
     console.log(index)
-
-    if (this.data.items.length > 1) {
-      let item = this.data.items.shift()
-      this.data.tempItems.unshift(item)
-      this.setData({
-        items: this.data.items,
-        tempItems: this.data.tempItems
-      })
-    }
+    let item = this.data.items.shift()
+    this.data.items.push(item)
+    this.setData({
+      items: this.data.items
+    })
   },
   // 上一张
   last() {
-    let item = this.data.tempItems.shift()
-    if (item) {
-      this.data.items.unshift(item)
-      this.setData({
-        items: this.data.items,
-        tempItems: this.data.tempItems
-      })
-    }
+    let item = this.data.items.shift()
+    this.data.items.push(item)
+    this.setData({
+      items: this.data.items
+    })
   },
   // 下一张
   next() {
-    if (this.data.items.length > 1) {
-      let item = this.data.items.shift()
-      this.data.tempItems.unshift(item)
-      this.setData({
-        items: this.data.items,
-        tempItems: this.data.tempItems
-      })
-    }
+    let item = this.data.items.pop()
+    this.data.items.unshift(item)
+    this.setData({
+      items: this.data.items,
+    })
   }
-
 })
